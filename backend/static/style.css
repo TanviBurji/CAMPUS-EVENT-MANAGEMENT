@@ -1,0 +1,62 @@
+/* style.css - polished look */
+:root {
+  --primary: #0b5ed7;
+  --accent: #f1c40f;
+  --muted: #6c757d;
+  --bg: #f4f6fb;
+}
+
+* { box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  color: #222;
+}
+
+.navbar {
+  background: linear-gradient(90deg, var(--primary), #165fc1);
+  color: white;
+  padding: 14px 18px;
+  box-shadow: 0 6px 18px rgba(11,94,215,0.12);
+}
+
+.navbar .brand { font-weight:700; font-size:18px; }
+.navbar .nav-actions a { margin-left: 8px; text-decoration: none; color: white; background: rgba(255,255,255,0.08); padding:8px 10px; border-radius:8px; }
+
+.container {
+  width: 94%;
+  max-width: 1100px;
+  margin: 22px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(16,24,40,0.06);
+}
+
+.header { display:flex; gap:12px; justify-content:space-between; align-items:center; }
+.header h1 { margin:0; color: var(--primary); }
+.hint { color: var(--muted); }
+
+.card { border-radius: 10px; border: 1px solid #eef6ff; padding: 14px; margin-bottom: 14px; background: linear-gradient(180deg, #fff, #fcfdff); }
+.row { display:flex; gap:12px; flex-wrap:wrap; align-items:flex-start; }
+.col { flex:1; min-width:200px; }
+
+.table { width:100%; border-collapse: collapse; margin-top: 10px; }
+.table th, .table td { padding: 10px; border: 1px solid #eef6ff; text-align: left; }
+.table th { background:#f0f7ff; }
+
+.btn { display:inline-block; padding:8px 12px; border-radius:8px; background: var(--primary); color:white; border:none; cursor:pointer; text-decoration:none; }
+.btn.secondary { background:#6c757d; }
+.btn.warning { background:#f59e0b; color:white; }
+.btn.ghost { background:transparent; color:var(--primary); border:1px solid #e6f0ff; }
+
+.form-field { margin-bottom:10px; }
+label { display:block; font-size:14px; margin-bottom:6px; color:var(--muted); }
+input[type="text"], select, textarea {
+  width:100%; padding:10px; border-radius:8px; border:1px solid #e6f0ff; background: #fbfdff;
+}
+small.hint { color:var(--muted); }
+
+.card .meta { color: var(--muted); font-size:13px; margin-top:6px; }
+footer { text-align:center; color:var(--muted); margin-top:12px; font-size:13px; }

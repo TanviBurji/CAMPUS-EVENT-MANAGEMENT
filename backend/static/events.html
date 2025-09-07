@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Events - Campus</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="navbar" style="margin-bottom:16px;">
+    <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;">
+      <div class="brand">🎓 Campus Event Management</div>
+      <div class="nav-actions">
+        <a class="btn" href="/static/index.html">Home</a>
+        <a class="btn" href="/static/reports.html">Reports</a>
+        <a class="btn ghost" href="/static/admin.html">Admin</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Events</h2>
+
+    <div class="card">
+      <h4>Quick Register a Student</h4>
+      <div class="form-field">
+        <label>Student Name</label>
+        <input id="reg-name" type="text" placeholder="e.g. Tanvi B">
+      </div>
+      <div class="form-field">
+        <label>Roll Number</label>
+        <input id="reg-roll" type="text" placeholder="e.g. ABC001">
+      </div>
+      <div class="form-field">
+        <label>Select Event</label>
+        <select id="reg-event"></select>
+      </div>
+      <button class="btn" onclick="submitRegistration()">Register Student</button>
+      <div id="reg-msg" style="margin-top:8px"></div>
+    </div>
+
+    <hr>
+
+    <div id="events-list"></div>
+  </div>
+
+  <script src="/static/script.js"></script>
+  <script>
+    fetchEventsForForm();
+    fetchEventsList();
+  </script>
+</body>
+</html>
