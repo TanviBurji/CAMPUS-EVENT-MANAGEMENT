@@ -9,10 +9,10 @@ Feedback is optional but only one feedback per student per event is allowed.
 System scales to ~50 colleges, 500 students each.
 
 My Understanding of the Problem:
-“Admins need a way to create and manage events.”
-“Students should be able to register and mark attendance.”
-“Reports are needed to analyze popularity and participation.”
-Assumptions (e.g., event IDs unique across colleges, prevent duplicate registrations).
+Admins need a way to create and manage events.
+Students should be able to register and mark attendance.
+Reports are needed to analyze popularity and participation.
+Assumptions(e.g. event IDs unique across colleges, prevent duplicate registrations).
 
 Features Implemented:
 Event creation (Admin).
